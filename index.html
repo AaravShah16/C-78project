@@ -1,0 +1,22 @@
+<html>
+    <head>
+    <title>Family book</title>
+    </head>
+    <body></body>
+    <h1>The Famiy Book</h1>
+    <img id="img_family" src="family book.jfif"width="250px">
+    <p id="name_text">Family Book</p>
+    <button type="button"
+    onclick="nextslide()">Next</button>
+</body>
+    <script>
+        var images=["https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4V23a10mcDnWUDgsfP3CJ4shveweCy-cXMQ&usqp=CAU","https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh1Cyof2j__lIrumvjQpJs-8KfaYye9_ZQtQ&usqp=CAU"]
+        var names =["AARAV SHAH","Manish Shah",]
+        var i=0;
+function nextslide(){
+document.getElementById("img_family").src=images[i];
+document.getElementById("name_text").innerHTML=names[i];
+i++;
+}
+    </script>
+</html>
